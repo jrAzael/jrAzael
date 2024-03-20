@@ -5,10 +5,13 @@ int main (){
     scanf("%d", &tam);
     printf(" tamaño %d\n",tam);
     float arre[tam];
-    for (int i;i<=tam;i++){
-         printf("ingresa un numero para la posicion %f: ",i);
-    scanf("%f", &arre[i]);
-          
+    for (int i=0;i<tam;i++){
+         printf("ingresa un numero para la posicion %d: ",i);
+    scanf("%f", &arre[i]);     
     }
+        for (int x=0;x<tam;x++){
+         printf(" el numero en la posicion %d es : %.1f\n",x,arre[x]);   
+    } 
+    return 0;
 
 }
