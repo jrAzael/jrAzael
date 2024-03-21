@@ -1,5 +1,6 @@
 #include<stdio.h>
 int main (){
+    float sum=0,mult=1;
     int tam=0;
     printf("ingresa el tamaño del arreglo : ");
     scanf("%d", &tam);
@@ -8,10 +9,10 @@ int main (){
     for (int i=0;i<tam;i++){
          printf("ingresa un numero para la posicion %d: ",i);
     scanf("%f", &arre[i]);     
+         sum=sum+arre[i];
+         mult=mult*arre[i];
     }
-        for (int x=0;x<tam;x++){
-         printf(" el numero en la posicion %d es : %.1f\n",x,arre[x]);   
-    } 
+    printf("el promedio es: %f\n",sum/tam);
+    printf("la multiplicacion es: %f\n",mult);
     return 0;
-
 }
