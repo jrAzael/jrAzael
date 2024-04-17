@@ -1,13 +1,9 @@
 #include <stdio.h>
-
+#include <string.h>
 int main (){
-
-
-    int dato=3;
-    int res;
-    int i;
-     // scanf("%d",&dato);
-    printf("A   A+2   A+4   A+6 \n");
-    for (i=0; i<dato;i++){ 
-    printf("%d   %d     %d     %d\n",dato,dato+2,dato+4,dato+6);
-    }
+  int len;
+  char cad[]= "es una cadena";
+  len = strlen(cad);
+  printf("la longitud de:\'%s\'es:%d\n",cad,len);
+   return 0; 
+}

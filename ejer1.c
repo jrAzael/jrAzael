@@ -1,14 +1,9 @@
 #include <stdio.h>
 
 int main (){
-
-
-    int longitudSerie = 50;
-    int i;
-    for (i=1; i<=(longitudSerie/2);i++){
-        printf("%d, ",2*i);
-        printf("%d, ",3*i);        
-        
-    }
-    return 0;
+    char cad [10];
+    printf("introduce una palabra \n");
+scanf ("%s",cad);
+printf("\n %s ",cad);
+   return 0; 
 }

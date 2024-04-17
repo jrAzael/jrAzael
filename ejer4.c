@@ -1,16 +1,20 @@
 #include <stdio.h>
-
+#include <string.h>
 int main (){
-    int i;
-    int j;
-    for (i=0;i<5;i++){
-        printf("para i: %d \t",i);
-        for (j=0;j<3;j++)
-        {
-          printf("j%d,",j);
-        }
-        printf("\n\n");
-        
-    }
-    return 0;
+  int i,j;
+  int len;
+  char cad[20];
+  printf("ingresa una palabra :");
+  scanf("%s",cad);
+  len = strlen(cad);
+  for (i=1;i<=len;i++){
+    printf("\n");
+  printf("*");
+    for (j=1;j<len;j++){
+  printf("*");
+  }
+
+  }
+    printf("\n");
+   return 0; 
 }
